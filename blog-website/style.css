@@ -90,3 +90,14 @@ img {
 .blog h3 {
   margin: 0 0 1rem 0;
 }
+
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+form textarea {
+  display: block;
+  padding: 0.5rem;
+}

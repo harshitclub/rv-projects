@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: #1e293b;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+}
+
+nav h1 {
+  color: white;
+  font-weight: 500;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li {
+  color: white;
+}
+
+.blog {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blogTitle {
+  margin: 1rem 0 1rem 0;
+}
+
+.blogAuthor {
+  margin: 0 0 1rem 0;
+}
+
+img {
+  margin: 0 0 1rem 0;
+}
+
+.blog h2 {
+  margin: 0 0 1rem 0;
+}
+
+.blog p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5rem;
+}
+
+.blog h3 {
+  margin: 0 0 1rem 0;
+}

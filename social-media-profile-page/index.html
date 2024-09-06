@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Profile Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="navbar-inner">
+        <div class="navbar-left flexbox-left">
+          <div id="nav-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="navbar-center flexbox-left"></div>
+        <div class="navbar-right flexbox-right">
+          <a class="profile-picture">
+            <img
+              src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flexbox-col">
+      <div class="profile-header-wrapper flexbox">
+        <form
+          class="profile-header flexbox"
+          method="post"
+          action=""
+          enctype="multipart/form-data"
+        >
+          <div class="profile-header-img-wrapper">
+            <fieldset class="profile-pic-upload-input">
+              <input
+                type="file"
+                name="image"
+                id="choose-profile-header"
+                value="Velg bilde"
+                accept="images"
+              />
+            </fieldset>
+            <a
+              ><img
+                class="profile-header-img"
+                alt=""
+                src="https://i.imgur.com/KBWXjaR.jpg"
+            /></a>
+          </div>
+          <div class="profile-header-overlay"></div>
+          <img
+            class="profile-header-img-back"
+            alt=""
+            src="https://i.imgur.com/KBWXjaR.jpg"
+          />
+        </form>
+        <div class="profile-header-note flexbox">
+          <p>Upload Photo</p>
+        </div>
+      </div>
+
+      <div class="profile-top">
+        <div class="profile-left">
+          <form
+            class="profile-pic-upload"
+            method="post"
+            action=""
+            enctype="multipart/form-data"
+          >
+            <div class="profile-pic-wrapper">
+              <fieldset class="profile-pic-upload-input">
+                <input
+                  type="file"
+                  name="image"
+                  id="choose-profile-picture"
+                  value="Velg bilde"
+                  accept="images"
+                />
+              </fieldset>
+              <a class="profile-pic"
+                ><img
+                  src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+              /></a>
+              <div class="profile-pic-note flexbox">
+                <p>Upload Photo</p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="profile-right flexbox-start-col">
+          <div class="profile-right-top">
+            <h3 class="profile-name">Username</h3>
+          </div>
+          <div class="profile-right-bottom">
+            <div class="profile-bio-wrapper">
+              <p class="profile-bio">
+                Welcome to my profile ♡
+                <br />
+                Follow me plz
+                <br />
+                <br />
+                <span>@Otheruser</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-page flexbox-col">
+        <div class="profile-page-nav flexbox">
+          <div class="profile-page-block">
+            <a><i class="uil uil-chat"></i> Posts</a>
+          </div>
+          <div class="profile-page-block">
+            <a><i class="uil uil-apps"></i> Images</a>
+          </div>
+          <div class="profile-page-block">
+            <a><i class="uil uil-bookmark-full"></i> Saved</a>
+          </div>
+        </div>
+        <div class="profile-page-inner">
+          <div id="img1" class="image-wrapper flexbox">
+            <div id="iov1" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  465 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 125
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1590164189510-dfb532e4dbf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2082&q=80"
+              alt=""
+            />
+          </div>
+          <div id="img2" class="image-wrapper flexbox">
+            <div id="iov2" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  751 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 122
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1452626212852-811d58933cae?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+              alt=""
+            />
+          </div>
+          <div id="img3" class="image-wrapper flexbox">
+            <div id="iov3" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  888 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 167
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1567270671170-fdc10a5bf831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+              alt=""
+            />
+          </div>
+          <div id="img4" class="image-wrapper flexbox">
+            <div id="iov4" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  1 015 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 235
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1599506059562-61051e711cdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+              alt=""
+            />
+          </div>
+          <div id="img5" class="image-wrapper flexbox">
+            <div id="iov5" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  1 669 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 321
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div id="img6" class="image-wrapper flexbox">
+            <div id="iov6" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  986 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 185
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1600706844152-3a29fce003b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+              alt=""
+            />
+          </div>
+          <div id="img7" class="image-wrapper flexbox">
+            <div id="iov7" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  707 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 92
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+              alt=""
+            />
+          </div>
+          <div id="img8" class="image-wrapper flexbox">
+            <div id="iov8" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  1 465 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 340
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div id="img9" class="image-wrapper flexbox">
+            <div id="iov9" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  2 002 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 548
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div id="img10" class="image-wrapper flexbox">
+            <div id="iov10" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  1 668 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 299
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div id="img11" class="image-wrapper flexbox">
+            <div id="iov11" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  812 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 55
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1562103608-104fa5589661?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+              alt=""
+            />
+          </div>
+          <div id="img12" class="image-wrapper flexbox">
+            <div id="iov12" class="img-overlay-wrapper">
+              <div class="img-btns">
+                <p>
+                  1 000 <i class="uil uil-heart-alt"></i> &nbsp&nbsp 195
+                  <i class="uil uil-comment"></i>
+                </p>
+              </div>
+              <div class="img-overlay"></div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <svg
+          class="footer-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          id="Layer_1"
+          data-name="Layer 1"
+          viewBox="0 0 766.15 715.7"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: var(--primary);
+              }
+              .cls-2 {
+                fill: var(--primary);
+              }
+              .cls-3 {
+                fill: var(--primary);
+              }
+            </style>
+          </defs>
+          <title>Icon</title>
+          <polygon
+            class="cls-1"
+            points="0 684.86 0 414.84 136.41 549.85 0 684.86"
+          />
+          <polygon
+            class="cls-2"
+            points="0 331.69 0 0 547.52 549.85 382.29 715.7 0 331.69"
+          />
+          <polygon
+            class="cls-1"
+            points="766.15 684.86 766.15 414.84 631.61 549.85 766.15 684.86"
+          />
+          <polygon
+            class="cls-3"
+            points="425.12 343.83 766.15 4.67 766.15 333.56 588.63 508.27 425.12 343.83"
+          />
+        </svg>
+      </footer>
+    </main>
+  </body>
+</html>

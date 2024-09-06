@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e8f0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 3rem 0;
+}
+main section {
+  background-color: #cbd5e1;
+  width: 35%;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+main section h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid #94a3b8;
+  text-align: center;
+  color: #334155;
+}
+
+main section form label {
+  display: block;
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  color: #334155;
+}
+
+main section form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #94a3b8;
+  outline: none;
+  border-radius: 0.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main section form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #94a3b8;
+  outline: none;
+  border-radius: 0.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main section form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #94a3b8;
+  outline: none;
+  border-radius: 0.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main section form button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #475569;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+}

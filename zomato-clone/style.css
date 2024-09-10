@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navFontSize: 1.2rem;
+  --sameWidth: 80%;
+}
+
+/* global classes */
+
+.maxWidth {
+  max-width: 1200px;
+}
+
+.commonFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.justifyStart {
+  justify-content: flex-start;
+}
+.justifyEnd {
+  justify-content: flex-end;
+}
+.justifyBtw {
+  justify-content: space-between;
+}
+.alignCenter {
+  align-items: center;
+}
+.alignStart {
+  align-items: flex-start;
+}
+.alignEnd {
+  align-items: flex-end;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.heroSection {
+  background: url(./assets/hero-bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 2rem; */
+  height: 70vh;
+  /* border: 2px solid red; */
+}
+
+.heroSection nav {
+  color: white;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: var(--sameWidth);
+  font-size: var(--navFontSize);
+  margin: 2rem 0 5rem 0;
+}
+
+.heroSection nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.heroSection nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.heroSection .mainContent {
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heroSection .mainContent h1 {
+  font-size: 5rem;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.heroSection .mainContent h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 2rem 0;
+}
+
+.heroSection .mainContent .heroSearch {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.heroSection .mainContent .heroSearch select {
+  width: 35%;
+  /* padding: 1rem; */
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-right: 1px solid grey;
+  padding: 0 1rem 0 0;
+  margin: 0 1rem 0 0;
+}
+
+.heroSection .mainContent .heroSearch input {
+  background: transparent;
+  width: 65%;
+  /* padding: 1rem; */
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+
+/* category section styling */
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  padding: 2rem 0 5rem 0;
+}
+
+.category .catChild {
+  display: flex;
+  width: var(--sameWidth);
+  justify-content: space-between;
+  align-items: flex-start;
+  /* border: 2px solid red; */
+}
+
+.category .catChild .catBox {
+  width: 30%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
+}
+
+.category .catChild .catBox img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.category .catChild .catBox .catBoxContent {
+  padding: 1rem;
+  background-color: white;
+}
+
+.category .catChild .catBox .catBoxContent h2 {
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+/* collection css styling */
+.collection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collection .collectionChild {
+  width: var(--sameWidth);
+}
+.collection .collectionChild .collMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection .collectionChild .coll1 {
+  width: 78%;
+}
+
+.collection .collectionChild .coll2 {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.collection .collectionChild h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.collection .collectionChild .coll1 p {
+  margin: 0 0 1rem 0;
+}
+
+.collection .collectionChild .coll1 .collectionBoxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.collection .collectionChild .coll1 .collectionBoxes .collBox {
+  width: 32.5%;
+  height: 22rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.collection .collectionChild .coll1 .collectionBoxes .collBox h4 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.collection .collectionChild .coll1 .collectionBoxes .collBox a {
+  text-decoration: none;
+  color: white;
+}
+
+.collection .collectionChild .coll1 .collectionBoxes .collBoxImg1 {
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(./assets/col1.avif);
+  background-position: center;
+  background-size: cover;
+}
+.collection .collectionChild .coll1 .collectionBoxes .collBoxImg2 {
+  background-size: cover;
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(./assets/col2.avif);
+  background-position: center;
+  background-size: cover;
+}
+.collection .collectionChild .coll1 .collectionBoxes .collBoxImg3 {
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(./assets/col3.avif);
+  background-position: center;
+  background-size: cover;
+}
+
+.collection .collectionChild .coll2 a {
+  text-decoration: none;
+  color: rgb(235, 130, 147);
+}
+
+.places {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placesContainer {
+  width: var(--sameWidth);
+}
+
+.placesContainer h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+}
+
+.placeBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.placeBox {
+  width: 32.43%;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 0.5rem;
+}
+
+.placeBox h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.downloadApp {
+  background-color: rgb(246, 232, 235);
+  margin: 3rem 0 0 0;
+  padding: 5rem 0;
+}
+
+.downloadContainer {
+  width: var(--sameWidth);
+  gap: 2rem;
+}
+.downImage {
+  width: 20%;
+}
+
+.downImage img {
+  width: 100%;
+}
+
+.downContent {
+  width: 50%;
+}
+
+.downContent h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0 0 2rem 0;
+}
+
+.downContent p {
+  margin: 0 0 2rem 0;
+}
+
+.radio {
+  margin: 0 0 1rem 0;
+}
+
+.searchInput {
+  margin: 0 0 2rem 0;
+}
+.searchInput input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid grey;
+  outline: none;
+  width: 50%;
+  border-radius: 0.3rem;
+}
+
+.searchInput button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(230, 123, 139);
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.downContent h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+  color: grey;
+}
+
+.downImages img {
+  width: 30%;
+  margin: 0 1rem 0 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 0 0;
+  background-color: #f8f8f8;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 0 0 0.5rem 0;
+}
+
+.fContainer {
+  width: var(--sameWidth);
+}
+
+.fBox1 {
+  margin: 0 0 3rem 0;
+}
+
+.fBox2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 3rem 0;
+}
+
+.fMenu h2 {
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.socialLinks ul {
+  gap: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.fBox3 {
+  padding: 2rem 0;
+  border-top: 1px solid grey;
+}
+
+.socialImage {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialImage img {
+  width: 60%;
+  margin: 0 0 1rem 0;
+}

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  width: 300px;
+  height: 450px;
+  border-radius: 40px;
+  padding: 30px;
+  text-align: center;
+  background-color: #575c9448;
+  box-shadow: 0 4px 60 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4px);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.material-icons {
+  position: absolute;
+  margin-right: 100%;
+  top: 36%;
+  color: #fff;
+  font-size: 20px;
+  font-variation-settings: "FILL" 0, "wght" 10, "GRAD" 0, "opsz" 10;
+}
+.input-text {
+  position: relative;
+  border-bottom: 2px solid #fff;
+  margin: 15px 0;
+  width: 100%;
+  left: 0%;
+}
+.input-text label {
+  position: absolute;
+  top: 36%;
+  left: 11%;
+  transform: translateY(50);
+  color: #fffefe81;
+  font-size: 13px;
+  pointer-events: none;
+  transition: 0.15 ease;
+}
+.input-text input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #10b3ff;
+}
+.input-text input:focus ~ label {
+  font-size: 10px;
+  top: 10px;
+  transform: translateY(-120%);
+}
+.fget {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  font-size: 13px;
+  color: #fffefe81;
+}
+.fget label {
+  display: flex;
+  align-items: center;
+}
+.fget label p {
+  margin-left: 5px;
+}
+
+.remember {
+  position: relative;
+  left: 0%;
+  accent-color: #fffefe81;
+}
+.wrapper a {
+  position: relative;
+  left: 0%;
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper a:hover {
+  text-decoration: underline;
+}
+button {
+  position: relative;
+  background: #a8e1ebab;
+  color: #000;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 40%;
+  left: 30%;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: #a8e1eb51;
+}
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
